@@ -1,0 +1,25 @@
+﻿<Window x:Class="Praktos_11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Praktos_11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <GroupBox Header="Практическая работа №11" HorizontalAlignment="Left" Height="354" VerticalAlignment="Top" Width="435" Margin="10,33,0,0"/>
+        <Button Content="Решить" HorizontalAlignment="Left" Click="firstSolution" Margin="116,210,0,0" VerticalAlignment="Top" Height="20"/>
+        <Button Content="Решить" Click="secondSolution" HorizontalAlignment="Left" Margin="318,210,0,0" VerticalAlignment="Top" Height="20"/>
+        <ListBox x:Name="firstExpression" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="69,70,593,262">
+        </ListBox>
+        <ListBox x:Name="secondExpression" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="262,70,400,262"/>
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="Меню">
+                <MenuItem Header="О программе" Click="Info" />
+                <Separator/>
+                <MenuItem Header="выход" Click="Exit"/>
+            </MenuItem>
+        </Menu>
+        <GroupBox Header="Практическая работа №11" HorizontalAlignment="Left" Height="354" VerticalAlignment="Top" Width="435" Margin="10,33,0,0"/>
+    </Grid>
+</Window>
